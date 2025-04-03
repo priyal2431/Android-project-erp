@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- Top Header -->
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FF0000"
+            android:padding="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/contact_us_back"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_arrow"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:text="Contact us"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        <!-- Contact Sections -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <!-- HOD Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="HOD"
+                    android:layout_height="wrap_content"
+                    android:layout_width="200dp"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="👤 RAVINDRA RAMESHBHAI DANGAR"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="💬 ravindra.dangar@rku.ac.in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+
+                <TextView
+                    android:text="📞 9909952030  Ext 190"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+            </LinearLayout>
+
+            <!-- ASSISTENT PROFESSOR Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="ASSISTENT PROFESSOR"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+
+                <TextView
+                    android:text="👤 KISHAN GANATRA"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+
+                <TextView
+                    android:text="💬 kishan.ganatra@rku.ac.in"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+
+                <TextView
+                    android:text="📞 9909952030  Ext 190"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+            </LinearLayout>
+
+            <!-- College Info -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:text="COLLEGE"
+                    android:textColor="#FF0000"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+
+                <TextView
+                    android:text="📞 Main campus - 9909952030/31"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+
+                <TextView
+                    android:text="📞 City campus - 9313305506"
+                    android:layout_height="wrap_content"
+                    android:layout_width="300dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

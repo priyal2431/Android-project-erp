@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RKU_IERPAC_SYSTEM" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Set Status Bar Color -->
+        <item name="android:statusBarColor">#FF0000</item>
+        <item name="statusBarBackground">#FF0000</item>
+        <item name="statusBarForeground">#FF0000</item>
+        <item name="android:windowLightStatusBar">false</item> <!-- Ensures white icons on dark background -->
+    </style>
+
+    <style name="Theme.RKU_IERPAC_SYSTEM" parent="Base.Theme.RKU_IERPAC_SYSTEM" />
+
+    <style name="Test" parent="">
+        <item name="android:statusBarColor">#FF0000</item>
+
+    </style>
+</resources>

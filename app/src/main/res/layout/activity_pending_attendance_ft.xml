@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Attendance"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <!-- Table Header -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow
+            android:background="@android:color/holo_red_dark"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="SR NO"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:text="Lectures"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/attendanceTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnCancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"/>
+    </TableLayout>
+
+    <!-- Cancel Button -->
+
+</LinearLayout>
