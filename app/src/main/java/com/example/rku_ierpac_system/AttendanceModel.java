@@ -8,6 +8,7 @@ public class AttendanceModel {
     private String slot3;
     private String slot4;
 
+
     public AttendanceModel(String date, String day, String slot1, String slot2, String slot3, String slot4) {
         this.date = date;
         this.day = day;
