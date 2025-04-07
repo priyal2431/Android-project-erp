@@ -3,38 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
-    <androidx.appcompat.widget.Toolbar
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="@color/red"-->
+    <!--        android:text="TimeTable"-->
+    <!--        android:titleTextColor="@android:color/white"/>-->
+
+    <LinearLayout
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/red"
-        android:title="TimeTable"
-        android:titleTextColor="@android:color/white"/>
+        android:layout_height="100dp"
+        android:background="#FF0000"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/dayNameText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Monday"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="8dp"/>
+        <ImageView
+            android:id="@+id/TimeTable_back_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back_arrow"
+            app:tint="@color/white" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="Time Table"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
 
-
+    </LinearLayout>
+    
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
-        app:tabIndicatorColor="@color/red"/>
+        android:textDirection="inherit"
+        app:tabSelectedTextColor="@color/red"
+        app:tabIndicatorColor="@color/red" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </LinearLayout>

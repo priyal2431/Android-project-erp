@@ -1,5 +1,6 @@
 package com.example.rku_ierpac_system;
 
+import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
@@ -15,12 +16,15 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-
+import androidx.cardview.widget.CardView;
 
 
 public class dashboard_faculty extends AppCompatActivity {
 
     ImageView imageView;
+
+    CardView Faculty_attendance,Faculty_TimeTable;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +32,9 @@ public class dashboard_faculty extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard_faculty);
 
         imageView = findViewById(R.id.profile_image);
+        Faculty_attendance = findViewById(R.id.Faculty_Attendance);
+        Faculty_TimeTable = findViewById(R.id.Faculty_TimeTable);
+
         showPendingAttendanceDialog();
 
         imageView.setOnClickListener(new View.OnClickListener() {
@@ -37,6 +44,23 @@ public class dashboard_faculty extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        Faculty_attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(dashboard_faculty.this, Pending_attendance.class);
+                startActivity(in);
+            }
+        });
+
+        Faculty_TimeTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(dashboard_faculty.this, Time_Table_Student.class);
+                startActivity(in);
+            }
+        });
+
     }
 
     private void showPendingAttendanceDialog() {

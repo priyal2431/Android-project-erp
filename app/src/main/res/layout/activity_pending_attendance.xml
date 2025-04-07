@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFFF">
+
+    <!-- Fixed Top Red Header -->
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="@color/red"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/back_to_dashboard_faculty"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="20dp"
+            android:text="Fill Attendance"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Scrollable Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- All your existing content goes here, like GridLayout and rows -->
+            <!-- START OF GRIDLAYOUT -->
+            <GridLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="10dp">
+
+                <View
+                    android:id="@+id/timeline"
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:background="#FF0000" />
+
+                <LinearLayout
+                    android:id="@+id/FillAttendance_Wise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sem-II"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="4dp"
+                            android:layout_marginVertical="4dp"
+                            android:background="#FF0000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/02/2025"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/red"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <TextView
+                                android:text="Course\n40101 - DIPLOMA IN COMPUTER ENGINEERING"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Subject\nDCE211 - PROGRAMMING IN C(PR)"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Division: C   Batch: 2DCEC1   Lec.No.: 1"
+                                android:textColor="#FF0000"
+                                android:layout_marginTop="8dp"
+                                android:textSize="13sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Fill Attendance"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/FillAttendance_Wise2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sem-II"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="4dp"
+                            android:layout_marginVertical="4dp"
+                            android:background="#FF0000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/02/2025"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/red"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <TextView
+                                android:text="Course\n40101 - DIPLOMA IN COMPUTER ENGINEERING"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Subject\nDCE211 - PROGRAMMING IN C(PR)"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Division: C   Batch: 2DCEC1   Lec.No.: 1"
+                                android:textColor="#FF0000"
+                                android:layout_marginTop="8dp"
+                                android:textSize="13sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Fill Attendance"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/FillAttendance_Wise3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sem-II"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="4dp"
+                            android:layout_marginVertical="4dp"
+                            android:background="#FF0000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/02/2025"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/red"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <TextView
+                                android:text="Course\n40101 - DIPLOMA IN COMPUTER ENGINEERING"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Subject\nDCE211 - PROGRAMMING IN C(PR)"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Division: C   Batch: 2DCEC1   Lec.No.: 1"
+                                android:textColor="#FF0000"
+                                android:layout_marginTop="8dp"
+                                android:textSize="13sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Fill Attendance"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/FillAttendance_Wise4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/white">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center"
+                        android:padding="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sem-II"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="4dp"
+                            android:layout_marginVertical="4dp"
+                            android:background="#FF0000" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="25/02/2025"
+                            android:textColor="#FF0000"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/red"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:elevation="4dp"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/white"
+                        app:cardCornerRadius="12dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="12dp">
+
+                            <TextView
+                                android:text="Course\n40101 - DIPLOMA IN COMPUTER ENGINEERING"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Subject\nDCE211 - PROGRAMMING IN C(PR)"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:textSize="14sp"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Division: C   Batch: 2DCEC1   Lec.No.: 1"
+                                android:textColor="#FF0000"
+                                android:layout_marginTop="8dp"
+                                android:textSize="13sp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+
+                            <TextView
+                                android:text="Fill Attendance"
+                                android:textColor="#FF0000"
+                                android:textStyle="bold"
+                                android:layout_marginTop="8dp"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"/>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+
+            </GridLayout>
+            <!-- END OF GRIDLAYOUT -->
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
