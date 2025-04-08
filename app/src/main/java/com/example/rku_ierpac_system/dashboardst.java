@@ -83,7 +83,7 @@ public class dashboardst extends AppCompatActivity {
         });
 
         vp2 = findViewById(R.id.viewPager);
-        ViewPagerAdapter vpa = new ViewPagerAdapter(getApplication(), ViewPagerImage_2);
+        ViewPagerAdapter vpa = new ViewPagerAdapter(getApplication(),ViewPagerImage_2);
         vp2.setAdapter(vpa);
         vp2.setCurrentItem(0);
     }

@@ -25,9 +25,9 @@ public class splash_screen extends AppCompatActivity {
         window.setStatusBarColor(Color.RED);
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
-            Intent intent = new Intent(splash_screen.this, selectrole.class);
+            Intent intent = new Intent(splash_screen.this, Login_Page.class);
             startActivity(intent);
             finish();
-        }, 3000);
+        }, 500);
     }
 }

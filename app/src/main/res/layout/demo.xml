@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:radius="8dp">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitCenter"
-        android:contentDescription="Image View" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:contentDescription="Image Slide"/>
+
+</androidx.cardview.widget.CardView>

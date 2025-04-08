@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
@@ -15,6 +16,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class Pending_attendance extends AppCompatActivity {
 
     LinearLayout FillAttendance_Wise,FillAttendance_Wise2,FillAttendance_Wise3,FillAttendance_Wise4;
+
+    ImageView back_to_dashboard_faculty;
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,7 +29,7 @@ public class Pending_attendance extends AppCompatActivity {
         FillAttendance_Wise2 = findViewById(R.id.FillAttendance_Wise2);
         FillAttendance_Wise3 = findViewById(R.id.FillAttendance_Wise3);
         FillAttendance_Wise4 = findViewById(R.id.FillAttendance_Wise4);
-
+        back_to_dashboard_faculty = findViewById(R.id.back_to_dashboard_faculty);
 
 
         FillAttendance_Wise.setOnClickListener(new View.OnClickListener() {
@@ -69,6 +72,13 @@ public class Pending_attendance extends AppCompatActivity {
             }
         });
 
+        back_to_dashboard_faculty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), dashboard_faculty.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

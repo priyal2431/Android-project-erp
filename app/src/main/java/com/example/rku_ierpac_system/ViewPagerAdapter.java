@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ViewPagerAdapter extends RecyclerView.Adapter<ViewPagerAdapter.ViewHolder> {
 
-    private final int[] images;  // Store image resource IDs
+    private final int[] images;  // Image resource IDs array
 
     public ViewPagerAdapter(Application application, int[] images) {
         this.images = images;

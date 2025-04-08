@@ -17,13 +17,16 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
+import androidx.viewpager2.widget.ViewPager2;
 
 
 public class dashboard_faculty extends AppCompatActivity {
 
     ImageView imageView;
-
+    ViewPager2 vp2;
     CardView Faculty_attendance,Faculty_TimeTable;
+
+    int ViewPagerImage_2[] = {R.drawable.image1, R.drawable.image2, R.drawable.image3, R.drawable.image4, R.drawable.image5};
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,7 @@ public class dashboard_faculty extends AppCompatActivity {
         imageView = findViewById(R.id.profile_image);
         Faculty_attendance = findViewById(R.id.Faculty_Attendance);
         Faculty_TimeTable = findViewById(R.id.Faculty_TimeTable);
+        vp2 = findViewById(R.id.viewPager);
 
         showPendingAttendanceDialog();
 
@@ -56,11 +60,14 @@ public class dashboard_faculty extends AppCompatActivity {
         Faculty_TimeTable.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(dashboard_faculty.this, Time_Table_Student.class);
+                Intent in = new Intent(dashboard_faculty.this, Time_Table_Faculty.class);
                 startActivity(in);
             }
         });
-
+        vp2 = findViewById(R.id.viewPager);
+        ViewPagerAdapter vpa = new ViewPagerAdapter(getApplication(), ViewPagerImage_2);
+        vp2.setAdapter(vpa);
+        vp2.setCurrentItem(0);
     }
 
     private void showPendingAttendanceDialog() {
